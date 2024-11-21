@@ -1,0 +1,38 @@
+# Virtual Environment
+venv/
+env/
+.env
+*.env
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database Files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# IDE Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Sensitive Information
+secrets.json
