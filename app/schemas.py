@@ -32,8 +32,8 @@ class GameCategory(str, Enum):
 class GameBase(BaseModel):
     title: str = Field(..., min_length=2, max_length=100)
     category: GameCategory
-    release_year: int = Field(..., gt=1970, lt=2024)
-    rating: float = Field(..., ge=0, le=10)
+    release_year: int = Field(..., gt=1970, le=2024)
+    rating: int = Field(..., ge=0, le=10)
     is_multiplayer: bool = False
 
 
