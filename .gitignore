@@ -36,3 +36,4 @@ build/
 
 # Sensitive Information
 secrets.json
+.vercel

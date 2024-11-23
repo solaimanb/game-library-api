@@ -72,3 +72,9 @@ def delete_game(game_id: int, db: Session = Depends(get_db)):
     if not success:
         raise HTTPException(status_code=404, detail="Game not found")
     return {"message": "Game deleted successfully"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000)
