@@ -44,7 +44,7 @@ Welcome to the Game Library API! This guide will help you get up and running qui
 ### Quick Start
 1. Clone Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/solaimanb/game-library-api.git
 ```
 2. Set Up Virtual Environment
 ```bash
