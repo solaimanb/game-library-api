@@ -10,7 +10,7 @@ class Game(Base):
     title = Column(String(100), index=True, nullable=False)
     category = Column(SQLAlchemyEnum(GameCategory), nullable=False)
     release_year = Column(Integer, nullable=False)
-    rating = Column(Float, nullable=False)
+    rating = Column(Integer, nullable=False)
     is_multiplayer = Column(Boolean, default=False, nullable=False)
 
     class Config:
