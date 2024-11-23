@@ -4,6 +4,7 @@ from typing import List
 from fastapi.middleware.cors import CORSMiddleware
 from . import models, schemas, crud
 from .database import engine, get_db
+from .schemas import GameCategory
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -56,6 +57,12 @@ def update_game(game_id: int, game: schemas.GameCreate, db: Session = Depends(ge
     if update_game is None:
         raise HTTPException(status_code=404, detail="Game not found")
     return update_game
+
+
+# GET ALL CATEGORIES --->
+@app.get("/game-categories")
+def get_game_categories():
+    return [category.value for category in GameCategory]
 
 
 # DELETE GAME --->
